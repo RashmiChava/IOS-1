@@ -1,0 +1,605 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2507437727BAD53E00D3EEC3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2507437627BAD53E00D3EEC3 /* AppDelegate.swift */; };
+		2507437927BAD53E00D3EEC3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2507437827BAD53E00D3EEC3 /* SceneDelegate.swift */; };
+		2507437B27BAD53E00D3EEC3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2507437A27BAD53E00D3EEC3 /* ViewController.swift */; };
+		2507437E27BAD53E00D3EEC3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2507437C27BAD53E00D3EEC3 /* Main.storyboard */; };
+		2507438027BAD53F00D3EEC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2507437F27BAD53F00D3EEC3 /* Assets.xcassets */; };
+		2507438327BAD53F00D3EEC3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2507438127BAD53F00D3EEC3 /* LaunchScreen.storyboard */; };
+		2507438E27BAD54000D3EEC3 /* Tummala_CalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2507438D27BAD54000D3EEC3 /* Tummala_CalculatorTests.swift */; };
+		2507439827BAD54000D3EEC3 /* Tummala_CalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2507439727BAD54000D3EEC3 /* Tummala_CalculatorUITests.swift */; };
+		2507439A27BAD54000D3EEC3 /* Tummala_CalculatorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2507439927BAD54000D3EEC3 /* Tummala_CalculatorUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2507438A27BAD54000D3EEC3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2507436B27BAD53E00D3EEC3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2507437227BAD53E00D3EEC3;
+			remoteInfo = Tummala_Calculator;
+		};
+		2507439427BAD54000D3EEC3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2507436B27BAD53E00D3EEC3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2507437227BAD53E00D3EEC3;
+			remoteInfo = Tummala_Calculator;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2507437327BAD53E00D3EEC3 /* Tummala_Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tummala_Calculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2507437627BAD53E00D3EEC3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2507437827BAD53E00D3EEC3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		2507437A27BAD53E00D3EEC3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2507437D27BAD53E00D3EEC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2507437F27BAD53F00D3EEC3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2507438227BAD53F00D3EEC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2507438427BAD53F00D3EEC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2507438927BAD54000D3EEC3 /* Tummala_CalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tummala_CalculatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2507438D27BAD54000D3EEC3 /* Tummala_CalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tummala_CalculatorTests.swift; sourceTree = "<group>"; };
+		2507439327BAD54000D3EEC3 /* Tummala_CalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tummala_CalculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2507439727BAD54000D3EEC3 /* Tummala_CalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tummala_CalculatorUITests.swift; sourceTree = "<group>"; };
+		2507439927BAD54000D3EEC3 /* Tummala_CalculatorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tummala_CalculatorUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2507437027BAD53E00D3EEC3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2507438627BAD54000D3EEC3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2507439027BAD54000D3EEC3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2507436A27BAD53E00D3EEC3 = {
+			isa = PBXGroup;
+			children = (
+				2507437527BAD53E00D3EEC3 /* Tummala_Calculator */,
+				2507438C27BAD54000D3EEC3 /* Tummala_CalculatorTests */,
+				2507439627BAD54000D3EEC3 /* Tummala_CalculatorUITests */,
+				2507437427BAD53E00D3EEC3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2507437427BAD53E00D3EEC3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2507437327BAD53E00D3EEC3 /* Tummala_Calculator.app */,
+				2507438927BAD54000D3EEC3 /* Tummala_CalculatorTests.xctest */,
+				2507439327BAD54000D3EEC3 /* Tummala_CalculatorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2507437527BAD53E00D3EEC3 /* Tummala_Calculator */ = {
+			isa = PBXGroup;
+			children = (
+				2507437627BAD53E00D3EEC3 /* AppDelegate.swift */,
+				2507437827BAD53E00D3EEC3 /* SceneDelegate.swift */,
+				2507437A27BAD53E00D3EEC3 /* ViewController.swift */,
+				2507437C27BAD53E00D3EEC3 /* Main.storyboard */,
+				2507437F27BAD53F00D3EEC3 /* Assets.xcassets */,
+				2507438127BAD53F00D3EEC3 /* LaunchScreen.storyboard */,
+				2507438427BAD53F00D3EEC3 /* Info.plist */,
+			);
+			path = Tummala_Calculator;
+			sourceTree = "<group>";
+		};
+		2507438C27BAD54000D3EEC3 /* Tummala_CalculatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				2507438D27BAD54000D3EEC3 /* Tummala_CalculatorTests.swift */,
+			);
+			path = Tummala_CalculatorTests;
+			sourceTree = "<group>";
+		};
+		2507439627BAD54000D3EEC3 /* Tummala_CalculatorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2507439727BAD54000D3EEC3 /* Tummala_CalculatorUITests.swift */,
+				2507439927BAD54000D3EEC3 /* Tummala_CalculatorUITestsLaunchTests.swift */,
+			);
+			path = Tummala_CalculatorUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2507437227BAD53E00D3EEC3 /* Tummala_Calculator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2507439D27BAD54000D3EEC3 /* Build configuration list for PBXNativeTarget "Tummala_Calculator" */;
+			buildPhases = (
+				2507436F27BAD53E00D3EEC3 /* Sources */,
+				2507437027BAD53E00D3EEC3 /* Frameworks */,
+				2507437127BAD53E00D3EEC3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tummala_Calculator;
+			productName = Tummala_Calculator;
+			productReference = 2507437327BAD53E00D3EEC3 /* Tummala_Calculator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2507438827BAD54000D3EEC3 /* Tummala_CalculatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 250743A027BAD54000D3EEC3 /* Build configuration list for PBXNativeTarget "Tummala_CalculatorTests" */;
+			buildPhases = (
+				2507438527BAD54000D3EEC3 /* Sources */,
+				2507438627BAD54000D3EEC3 /* Frameworks */,
+				2507438727BAD54000D3EEC3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2507438B27BAD54000D3EEC3 /* PBXTargetDependency */,
+			);
+			name = Tummala_CalculatorTests;
+			productName = Tummala_CalculatorTests;
+			productReference = 2507438927BAD54000D3EEC3 /* Tummala_CalculatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2507439227BAD54000D3EEC3 /* Tummala_CalculatorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 250743A327BAD54000D3EEC3 /* Build configuration list for PBXNativeTarget "Tummala_CalculatorUITests" */;
+			buildPhases = (
+				2507438F27BAD54000D3EEC3 /* Sources */,
+				2507439027BAD54000D3EEC3 /* Frameworks */,
+				2507439127BAD54000D3EEC3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2507439527BAD54000D3EEC3 /* PBXTargetDependency */,
+			);
+			name = Tummala_CalculatorUITests;
+			productName = Tummala_CalculatorUITests;
+			productReference = 2507439327BAD54000D3EEC3 /* Tummala_CalculatorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2507436B27BAD53E00D3EEC3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					2507437227BAD53E00D3EEC3 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					2507438827BAD54000D3EEC3 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 2507437227BAD53E00D3EEC3;
+					};
+					2507439227BAD54000D3EEC3 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 2507437227BAD53E00D3EEC3;
+					};
+				};
+			};
+			buildConfigurationList = 2507436E27BAD53E00D3EEC3 /* Build configuration list for PBXProject "Tummala_Calculator" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2507436A27BAD53E00D3EEC3;
+			productRefGroup = 2507437427BAD53E00D3EEC3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2507437227BAD53E00D3EEC3 /* Tummala_Calculator */,
+				2507438827BAD54000D3EEC3 /* Tummala_CalculatorTests */,
+				2507439227BAD54000D3EEC3 /* Tummala_CalculatorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2507437127BAD53E00D3EEC3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2507438327BAD53F00D3EEC3 /* LaunchScreen.storyboard in Resources */,
+				2507438027BAD53F00D3EEC3 /* Assets.xcassets in Resources */,
+				2507437E27BAD53E00D3EEC3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2507438727BAD54000D3EEC3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2507439127BAD54000D3EEC3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2507436F27BAD53E00D3EEC3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2507437B27BAD53E00D3EEC3 /* ViewController.swift in Sources */,
+				2507437727BAD53E00D3EEC3 /* AppDelegate.swift in Sources */,
+				2507437927BAD53E00D3EEC3 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2507438527BAD54000D3EEC3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2507438E27BAD54000D3EEC3 /* Tummala_CalculatorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2507438F27BAD54000D3EEC3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2507439A27BAD54000D3EEC3 /* Tummala_CalculatorUITestsLaunchTests.swift in Sources */,
+				2507439827BAD54000D3EEC3 /* Tummala_CalculatorUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2507438B27BAD54000D3EEC3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2507437227BAD53E00D3EEC3 /* Tummala_Calculator */;
+			targetProxy = 2507438A27BAD54000D3EEC3 /* PBXContainerItemProxy */;
+		};
+		2507439527BAD54000D3EEC3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2507437227BAD53E00D3EEC3 /* Tummala_Calculator */;
+			targetProxy = 2507439427BAD54000D3EEC3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2507437C27BAD53E00D3EEC3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2507437D27BAD53E00D3EEC3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2507438127BAD53F00D3EEC3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2507438227BAD53F00D3EEC3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2507439B27BAD54000D3EEC3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2507439C27BAD54000D3EEC3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2507439E27BAD54000D3EEC3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Tummala_Calculator/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Tummala_Calculator;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "NWMSU.Tummala-Calculator";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2507439F27BAD54000D3EEC3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Tummala_Calculator/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Tummala_Calculator;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "NWMSU.Tummala-Calculator";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		250743A127BAD54000D3EEC3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "NWMSU.Tummala-CalculatorTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tummala_Calculator.app/Tummala_Calculator";
+			};
+			name = Debug;
+		};
+		250743A227BAD54000D3EEC3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "NWMSU.Tummala-CalculatorTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tummala_Calculator.app/Tummala_Calculator";
+			};
+			name = Release;
+		};
+		250743A427BAD54000D3EEC3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "NWMSU.Tummala-CalculatorUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Tummala_Calculator;
+			};
+			name = Debug;
+		};
+		250743A527BAD54000D3EEC3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "NWMSU.Tummala-CalculatorUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Tummala_Calculator;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2507436E27BAD53E00D3EEC3 /* Build configuration list for PBXProject "Tummala_Calculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2507439B27BAD54000D3EEC3 /* Debug */,
+				2507439C27BAD54000D3EEC3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2507439D27BAD54000D3EEC3 /* Build configuration list for PBXNativeTarget "Tummala_Calculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2507439E27BAD54000D3EEC3 /* Debug */,
+				2507439F27BAD54000D3EEC3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		250743A027BAD54000D3EEC3 /* Build configuration list for PBXNativeTarget "Tummala_CalculatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				250743A127BAD54000D3EEC3 /* Debug */,
+				250743A227BAD54000D3EEC3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		250743A327BAD54000D3EEC3 /* Build configuration list for PBXNativeTarget "Tummala_CalculatorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				250743A427BAD54000D3EEC3 /* Debug */,
+				250743A527BAD54000D3EEC3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2507436B27BAD53E00D3EEC3 /* Project object */;
+}
