@@ -24,13 +24,7 @@ class ViewController: UIViewController {
         }
         ResultLabel.text = pressedNumber
     }
-    func clearAll(){
-        pressedNumber = ""
-        oldNumber = ""
-        signOperator = " "
-        ResultLabel.text = "0"
-        print(pressedNumber)
-    }
+
     
     func signOperator( signOperator: Character ){
 
@@ -121,7 +115,11 @@ class ViewController: UIViewController {
     
     
     @IBAction func buttonAC(_ sender: UIButton) {
-        clearAll()
+        pressedNumber = ""
+        oldNumber = ""
+        signOperator = " "
+        ResultLabel.text = "0"
+        print(pressedNumber)
     }
     
     @IBAction func buttonC(_ sender: UIButton) {
@@ -228,7 +226,11 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        clearAll()
+        pressedNumber = ""
+        oldNumber = ""
+        signOperator = " "
+        ResultLabel.text = "0"
+        print(pressedNumber)
         // Do any additional setup after loading the view.
     }
 
