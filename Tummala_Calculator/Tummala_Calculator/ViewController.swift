@@ -9,15 +9,104 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    var pressedNumber = 0
-    var oldNumber = 0
-    var varNumberResult = 0
-    var signOperator = "+"
-
+    var pressedNumber = ""
+    var oldNumber = ""
+    var signOperator: Character = " "
+    
+    var presentNumberFinished: Bool = false
+    
+    func appendPressedButton( number: String ){
+        if presentNumberFinished == false {
+            pressedNumber = pressedNumber +  number
+        }else{
+            pressedNumber = number
+            presentNumberFinished = false
+        }
+        ResultLabel.text = pressedNumber
+    }
     func clearText()
     {
         ResultLabel.text = ""
     }
+    
+    func signOperator( signOperator: Character ){
+
+        if presentNumberFinished == false {
+            presentNumberFinished = true
+            if oldNumber.isEmpty {
+                oldNumber = pressedNumber
+                pressedNumber = ""
+            }else{
+                appendResult(result: calculate())
+
+            }
+        }
+        self.signOperator = signOperator
+    }
+    
+    func appendResult(result: String){
+        ResultLabel.text = result
+        pressedNumber = result
+        oldNumber = result
+    }
+    
+    
+    func calculate()->String{
+        var result: String = ""
+        let firstNumber = Double(oldNumber)!
+        let secondNumber = Double(pressedNumber)!
+        switch signOperator {
+        case "+":
+            result = String(firstNumber + secondNumber)
+        case "-":
+            result = String(firstNumber - secondNumber)
+        case "*":
+            result = String(firstNumber * secondNumber)
+        case "/":
+            if secondNumber == 0 {
+                    result = "Error"
+            }else{
+                result = String(firstNumber / secondNumber)
+            }
+
+        default:
+            result = ""
+        }
+       result = roundOff(result)
+        
+        return result
+        
+    }
+    
+    
+    func roundOff(_ result:String) -> String{
+        if result == "Error" {
+            return result
+        }
+        let splitArray = result.split(separator: ".")
+        var decimalVal = Double ("0." + splitArray[1])
+        if splitArray[1].count > 5 {
+            print(splitArray[0])
+            decimalVal = Double(String(format: "%.5f", decimalVal!))
+            print(String(Double(splitArray[0])! + decimalVal!))
+            return String(Double(splitArray[0])! + decimalVal!)
+        }else if result.count > 2{
+            let index = result.index(result.endIndex, offsetBy: -2)
+            if result[index..<result.endIndex] == ".0" {
+                print(result[index..<result.endIndex])
+                return String(result[result.startIndex..<index])
+            }
+            return result
+        }else
+        {
+            return result
+        }
+//        return result
+
+    }
+    
+    
+    
     @IBOutlet weak var ResultLabel: UILabel!
     
     
@@ -26,146 +115,102 @@ class ViewController: UIViewController {
     }
     
     @IBAction func buttonC(_ sender: UIButton) {
-        ResultLabel.text = ""
+        pressedNumber = ""
+        ResultLabel.text = "0"
     }
     
     @IBAction func buttonplus_minus(_ sender: UIButton) {
+        if pressedNumber.first == "-" {
+            pressedNumber.removeFirst()
+        }
+        else if pressedNumber != "0"{
+            pressedNumber = "-" + pressedNumber
+        }
+        ResultLabel.text = pressedNumber
     }
     
     @IBAction func buttonDiv(_ sender: UIButton) {
-        signOperator = "/"
-        pressedNumber = Int(ResultLabel.text!)!
-        clearText()
+        signOperator(signOperator: "/")
+
     }
     
     @IBAction func button7(_ sender: UIButton) {
-        ResultLabel.text = ResultLabel.text! + "7"
+        appendPressedButton(number: "7")
     }
     
     @IBAction func button8(_ sender: UIButton) {
-        ResultLabel.text = ResultLabel.text! + "8"
+        appendPressedButton(number: "8")
     }
     
     @IBAction func button9(_ sender: UIButton) {
-        ResultLabel.text = ResultLabel.text! + "9"
+        appendPressedButton(number: "9")
     }
     
     @IBAction func buttonX(_ sender: UIButton) {
-        signOperator = "*"
-        pressedNumber = Int(ResultLabel.text!)!
-        clearText()
+        signOperator(signOperator: "*")
     }
     
     @IBAction func button4(_ sender: UIButton) {
-        ResultLabel.text = ResultLabel.text! + "4"
+        appendPressedButton(number: "4")
     }
     
     @IBAction func button5(_ sender: UIButton) {
-        ResultLabel.text = ResultLabel.text! + "5"
+        appendPressedButton(number: "5")
     }
     
     @IBAction func button6(_ sender: UIButton) {
-        ResultLabel.text = ResultLabel.text! + "6"
+        appendPressedButton(number: "6")
     }
     
     @IBAction func buttonminus(_ sender: UIButton) {
-        signOperator = "-"
-        pressedNumber = Int(ResultLabel.text!)!
-        clearText()
+        signOperator(signOperator: "-")
+        
     }
     
     @IBAction func button1(_ sender: UIButton) {
-        ResultLabel.text = ResultLabel.text! + "1"
+        appendPressedButton(number: "1")
     }
     
     @IBAction func button2(_ sender: UIButton) {
-        ResultLabel.text = ResultLabel.text! + "2"
+        appendPressedButton(number: "2")
     }
     
     @IBAction func button3(_ sender: UIButton) {
-        ResultLabel.text = ResultLabel.text! + "3"
+        appendPressedButton(number: "3")
     }
     
     @IBAction func buttonplus(_ sender: UIButton) {
-        if(String(pressedNumber).contains("."))
-        {
-            signOperator = "+"
-            pressedNumber = Double(ResultLabel.text!)!
-            clearText()
-        }
-        else
-        {
-            signOperator = "+"
-            pressedNumber = Int(ResultLabel.text!)!
-            clearText()
-        }
-        
-        
-        
+        signOperator(signOperator: "+")
     }
     
     @IBAction func buttonzero(_ sender: UIButton) {
-        ResultLabel.text = ResultLabel.text! + "0"
+        appendPressedButton(number: "0")
     }
     
     @IBAction func buttondot(_ sender: UIButton) {
-        ResultLabel.text = ResultLabel.text! + "."
+        appendPressedButton(number: ".")
         
     }
     
     @IBAction func buttonpercent(_ sender: UIButton) {
-        signOperator = "%"
-        pressedNumber = Int(ResultLabel.text!)!
-        clearText()
+        
     }
     
     @IBAction func buttonequals(_ sender: UIButton) {
-        oldNumber = Int(ResultLabel.text!)!
-        
-        switch signOperator
-        {
-                case "+":
-                    varNumberResult = pressedNumber+oldNumber
-                    ResultLabel.text = String(varNumberResult)
-                case "-":
-                    varNumberResult = pressedNumber-oldNumber
-                    ResultLabel.text = String(varNumberResult)
-                case "*":
-                    varNumberResult = pressedNumber*oldNumber
-                    ResultLabel.text = String(varNumberResult)
-                case "/":
-                    if(oldNumber==0){
-                        ResultLabel.text = "Error"
-                    }
-                    else
-                    {
-                        varNumberResult = pressedNumber/oldNumber
-                        ResultLabel.text = String(varNumberResult)
-                    }
-                    
-                case "%":
-                    varNumberResult = pressedNumber%oldNumber
-                    ResultLabel.text = String(varNumberResult)
-                default:
-                    ResultLabel.text = "ERROR"
-                    
+        if signOperator != " " {
+            if pressedNumber.isEmpty {
+                pressedNumber = ResultLabel.text!
+            }
+            appendResult(result: calculate())
+            presentNumberFinished = true
         }
+        
     }
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        clearText()
         // Do any additional setup after loading the view.
     }
 
