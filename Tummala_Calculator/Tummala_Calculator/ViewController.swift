@@ -24,9 +24,12 @@ class ViewController: UIViewController {
         }
         ResultLabel.text = pressedNumber
     }
-    func clearText()
-    {
-        ResultLabel.text = ""
+    func clearAll(){
+        pressedNumber = ""
+        oldNumber = ""
+        signOperator = " "
+        ResultLabel.text = "0"
+        print(pressedNumber)
     }
     
     func signOperator( signOperator: Character ){
@@ -63,6 +66,12 @@ class ViewController: UIViewController {
         case "*":
             result = String(firstNumber * secondNumber)
         case "/":
+            if secondNumber == 0 {
+                    result = "Error"
+            }else{
+                result = String(firstNumber / secondNumber)
+            }
+        case "%":
             if secondNumber == 0 {
                     result = "Error"
             }else{
@@ -111,7 +120,7 @@ class ViewController: UIViewController {
     
     
     @IBAction func buttonAC(_ sender: UIButton) {
-        clearText()
+        clearAll()
     }
     
     @IBAction func buttonC(_ sender: UIButton) {
@@ -193,7 +202,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func buttonpercent(_ sender: UIButton) {
-        
+        signOperator(signOperator: "%")
     }
     
     @IBAction func buttonequals(_ sender: UIButton) {
@@ -210,7 +219,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        clearText()
+        clearAll()
         // Do any additional setup after loading the view.
     }
 
