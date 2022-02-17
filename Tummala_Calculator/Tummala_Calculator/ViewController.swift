@@ -105,7 +105,6 @@ class ViewController: UIViewController {
         {
             return result
         }
-//        return result
 
     }
     
@@ -128,7 +127,12 @@ class ViewController: UIViewController {
     }
     
     @IBAction func buttonplus_minus(_ sender: UIButton) {
-        if pressedNumber.first == "-" {
+        if(pressedNumber == "" && oldNumber == "")
+        {
+            signOperator(signOperator: "-")
+            appendPressedButton(number: "-")
+        }
+        else if pressedNumber.first == "-" {
             pressedNumber.removeFirst()
         }
         else if pressedNumber != "0"{
