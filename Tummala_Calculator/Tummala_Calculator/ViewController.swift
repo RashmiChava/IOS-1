@@ -75,7 +75,8 @@ class ViewController: UIViewController {
             if secondNumber == 0 {
                     result = "Error"
             }else{
-                result = String(firstNumber / secondNumber)
+                let result1 = firstNumber.truncatingRemainder(dividingBy: secondNumber)
+                result = String(result1)
             }
 
         default:
@@ -172,8 +173,16 @@ class ViewController: UIViewController {
     }
     
     @IBAction func buttonminus(_ sender: UIButton) {
-        signOperator(signOperator: "-")
-        
+        if(pressedNumber == "" && oldNumber == "")
+        {
+            signOperator(signOperator: "-")
+            appendPressedButton(number: "-")
+        }
+        else
+        {
+            signOperator(signOperator: "-")
+        }
+
     }
     
     @IBAction func button1(_ sender: UIButton) {
