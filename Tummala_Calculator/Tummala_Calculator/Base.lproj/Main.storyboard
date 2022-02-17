@@ -254,7 +254,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zU2-RT-xUD">
-                                                <rect key="frame" x="178" y="0.0" width="47" height="50"/>
+                                                <rect key="frame" x="178" y="0.0" width="50" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="50" id="7VK-I3-hl2"/>
                                                     <constraint firstAttribute="height" constant="50" id="y24-03-pG0"/>
@@ -269,7 +269,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="raY-Q0-GGR">
-                                                <rect key="frame" x="264" y="0.0" width="50" height="50"/>
+                                                <rect key="frame" x="267" y="0.0" width="47" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="50" id="ZWk-Ki-D9K"/>
                                                     <constraint firstAttribute="height" constant="50" id="tpw-r8-1AZ"/>
