@@ -24,15 +24,15 @@ class ViewController: UIViewController {
         
         var name = NameTextField.text
         
-        var inr = Double(INRTextField.text!)
+        var inr = Int(INRTextField.text!)
         
-        var usd = Double(USDTextField.text!)
+        var usd = Int(USDTextField.text!)
         
-        var usdtoinr = round(usd! * 74.64 * 100)/100.0
+        var usdtoinr = round(Double(usd!) * 74.64 * 100)/100.0
         
-        var inrtousd = round(inr!/74.64 * 100)/100.0
+        var inrtousd = round(Double(inr!)/74.64 * 100)/100.0
         
-        resultLabel.text = "Hello \(name!),\nAmount Rs. \(inr!) in USD is $\(inrtousd)\nAmount $\(usd!) in INR is Rs.\(usdtoinr)"
+        resultLabel.text = "Hello \(name!),\nAmount Rs.\(inr!) in USD is $\(inrtousd)\nAmount $\(usd!) in INR is Rs.\(usdtoinr)"
         
         
     }
