@@ -28,11 +28,11 @@ class ViewController: UIViewController {
         
         var usd = Double(USDTextField.text!)
         
-        var usdtoinr = usd! * 74.64
+        var usdtoinr = round(usd! * 74.64 * 100)/100.0
         
-        var inrtousd = inr!/74.64
+        var inrtousd = round(inr!/74.64 * 100)/100.0
         
-        resultLabel.text = "Hello, \(name)! Amount Rs. \(inr)! in USD is $\(inrtousd) Amount $\(usd) in INR is Rs.\(usdtoinr)"
+        resultLabel.text = "Hello \(name!),\nAmount Rs. \(inr!) in USD is $\(inrtousd)\nAmount $\(usd!) in INR is Rs.\(usdtoinr)"
         
         
     }
